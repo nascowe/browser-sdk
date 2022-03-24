@@ -329,6 +329,7 @@ function tracingHeadersFor(traceId: TraceIdentifier, spanId: TraceIdentifier) {
     'x-datadog-sampled': '1',
     'x-datadog-sampling-priority': '1',
     'x-datadog-trace-id': traceId.toDecimalString(),
+    'traceparent': '01-0000000000000000'+BigInt(traceId.toDecimalString()).toString(16)+'-'+BigInt(spanId.toDecimalString()).toString(8)+’-01',
   }
 }
 

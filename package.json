@@ -2,6 +2,7 @@
   "name": "browser-sdk",
   "description": "browser SDK",
   "private": true,
+  "version": "4.7.0a",
   "workspaces": [
     "packages/*",
     "developer-extension",
